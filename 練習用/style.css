@@ -15,19 +15,18 @@ p {
     font-size: 24px;
 }
 
-button {
-    background-color: #7b4db7;
+.btn {
+    display: inline-block;
+    background-color: #c77dff;
     color: white;
-    font-size: 20px;
+    text-decoration: none;
     padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 30px;
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #9b6bd6;
+.btn:hover {
+    opacity: 0.8;
 }
 
 section {
