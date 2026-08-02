@@ -1,4 +1,11 @@
 /*  --共通-- */
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f8f4ff;
     text-align: center;
@@ -13,6 +20,7 @@ h1 {
 
 p {
     font-size: 24px;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -41,6 +49,8 @@ section {
 header {
     padding: 80px 20px;
     background-color: #fff5fa;
+    max-width: 1200px;
+    margin: 0 auto;
     
 }
 
