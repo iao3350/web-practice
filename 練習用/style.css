@@ -67,3 +67,15 @@ nav ul {
     justify-content: center;
     padding: 0;
 }
+
+header img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
