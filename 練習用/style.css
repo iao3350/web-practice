@@ -20,18 +20,24 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 50px;
+    font-family: 'Zen Old Mincho', serif;
 }
 
 .btn {
     display: inline-block;
-    background-color: #c77dff;
+    background-color: #b97a74;
     color: white;
     text-decoration: none;
     padding: 15px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: 0.3s;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Zen Old Mincho', serif;
+
+    border: none;
 }
 
 .btn:hover {
@@ -81,4 +87,14 @@ header img {
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+nav a {
+    color: #c37854;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav {
+    margin-bottom: 30px;
 }
