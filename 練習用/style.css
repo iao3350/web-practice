@@ -98,3 +98,13 @@ nav a {
 nav {
     margin-bottom: 30px;
 }
+
+.about-content {
+display: flex;
+gap: 50px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+}
