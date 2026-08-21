@@ -47,11 +47,12 @@ p {
 section {
     background-color: white;
     width: 700px;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 /*--ヘッダー--*/
 header {
      
@@ -60,7 +61,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 60px 20px 40px;
 }
 
 /*--フッター--*/
@@ -107,4 +108,12 @@ gap: 50px;
 .about-image img {
     width: 100%;
     max-width: 500px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+#about {
+    margin-top: 10px;
 }
