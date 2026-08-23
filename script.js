@@ -7,8 +7,12 @@ console.log(daySelect);
 const timeSelect = document.getElementById("time");
 
 const lessonTimes = {
-    monday: ["19:00", "19:30", "20:00"],
-    tuesday: ["18:30", "19:00", "19:30", "20:00"],
+    monday: ["19:00", "19:30", "20:00", "20:30"],
+    tuesday: ["18:30", "19:00", "19:30", "20:00", "20:30"],
+    wednesday: ["20:00","20:30"],
+    thursday: ["19:00", "19:30", "20:00", "20:30"],
+    friday: ["18:00", "18:30", "20:00", "20:30"],
+    saturday: ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30"],
 };
 
 daySelect.addEventListener("change", function(event) {
