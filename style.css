@@ -358,6 +358,7 @@ label {
 
     .hero {
         flex-direction: column;
+        background-color: pink;
     }
     
 }
