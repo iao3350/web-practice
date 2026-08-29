@@ -117,6 +117,7 @@ nav {
 
 .teacher-text {
     width: 55%;
+    text-align: left;
 }
 
 .about-content {
@@ -351,6 +352,11 @@ label {
     margin: 0;
 }
 
+.sp-only {
+    display: none;
+
+}
+
 @media (max-width: 768px){
     section {
         width: 90%;
@@ -358,6 +364,85 @@ label {
 
     .hero {
         flex-direction: column;
+        gap: 20px;
     }
     
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .catch-copy {
+        font-size: 18px;
+    }
+
+    .course-item {
+        width: 100%;
+    }
+
+    .course-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lesson-price {
+        flex-direction: column;
+        gap: 3px;
+        margin: 15px;
+    }
+
+    .lesson-price p {
+        margin-bottom: 5px;
+    }
+
+    .info-sections {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sns-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-sections section {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .sp-only {
+        display: block;
+    }
+
+    .teacher-card {
+        flex-direction: column;
+    }
+
+    .teacher-image,
+    .teacher-text {
+        width: 100%;
+    }
+
 }
