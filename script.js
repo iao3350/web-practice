@@ -29,3 +29,37 @@ daySelect.addEventListener("change", function(event) {
         timeSelect.appendChild(option);
     });
 });
+
+const form = document.getElementById("trial-form");
+
+const result = document.getElementById("result");
+
+const trialCard = document.querySelector(".trial-card");
+
+const resultCard = document.querySelector(".result-card");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    fetch(form.action, {
+        method: "POST",
+        headers: {
+            "accept": "application/json"
+        },
+        body: formData
+    })
+    .then(function(response){
+        console.log("response");
+        console.log("フォームが送信されました！");
+        console.log(daySelect.value);
+        console.log(timeSelect.value);
+        trialCard.style.display = "none";
+        resultCard.style.display = "flex";
+        result.innerHTML = "申し込みが完了しました！";
+    })
+    
+});
+
+
+
+

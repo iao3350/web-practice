@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>体験レッスン</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>体験レッスンのお申し込み</h1>
-    <p>ご希望の曜日と時間を選択してください！</p>
-    <label for="day">希望曜日</label>
-    <select id="day">
-        <option value="">選択してください</option>
-        <option value="monday">月曜日</option>
-        <option value="tuesday">火曜日</option>
-        <option value="wednesday">水曜日</option>
-        <option value="thursday">木曜日</option>
-        <option value="friday">金曜日</option>
-        <option value="saturday">土曜日</option>
-    </select>
+    <div class="trial-card">
+        <h1 class="trial-title">体験レッスンのお申し込み</h1>
+            <p>ご希望の曜日と時間を選択してください！</p>
+            <form id="trial-form" action="https://formspree.io/f/mljrkvyj" method="POST">
+            <input type="hidden" name="subject" value="体験レッスンのお申し込み">
+                <label for="day">希望曜日</label>
+                <select id="day" name="希望曜日">
+                    <option value="">選択してください</option>
+                    <option value="monday">月曜日</option>
+                    <option value="tuesday">火曜日</option>
+                    <option value="wednesday">水曜日</option>
+                    <option value="thursday">木曜日</option>
+                    <option value="friday">金曜日</option>
+                    <option value="saturday">土曜日</option>
+            </select>
 
-    <label for="time">希望時間</label>
-    <select id="time">
-        <option value="">選択してください</option>
-    </select>
+            <label for="time">希望時間</label>
+                <select id="time" name="希望時間">
+                    <option value="">選択してください</option>
+                </select>
+            <button type="submit" class="trial-btn">体験レッスンを申し込む</button>
+            </form>
+            
+    </div>
+
+    <div class="result-card">
+    <p id="result"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
